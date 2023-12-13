@@ -1,0 +1,74 @@
+#about {
+    background: url("../images/BgImage.png") no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.about-container {
+    padding: 35px 70px;
+    color: white;
+}
+
+.about-container .hire {
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid #60A7B6;
+    color: rgba(53, 214, 247, 1);
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    padding: 45px 150px;
+    gap: 60px;
+}
+
+.info-section .heading {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.intro::before {
+    content: 'hello';
+    transform: translate(-35%, -42%);
+
+}
+
+.tech::before {
+    content: 'techstack';
+    transform: translate(-20%, -42%);
+
+}
+
+.heading::before {
+    position: absolute;
+    font-family: 'Yellowtail', cursive;
+    text-transform: lowercase;
+    color: #1B3338;
+    font-size: 96px;
+    z-index: -1;
+    font-weight: 400;
+}
+
+.sec {
+    flex-basis: 100%;
+}
+
+.skills {
+    padding: 0px 10px;
+}
+
+.skills-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.skills-wrapper .child {
+    border-radius: 8px;
+    border: 2px solid rgba(60, 162, 235, 0.60);
+    background: rgba(202, 233, 255, 0.30);
+    padding: 3px 10px;
+}
