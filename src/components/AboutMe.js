@@ -1,5 +1,6 @@
 import React from "react";
 import { SKILLS } from "./commom";
+import bgImg from "../images/BgImage.png";
 
 const AboutMe = () => {
     const renderSkills = (skills = []) => {
@@ -15,7 +16,7 @@ const AboutMe = () => {
             </div>
         );
     };
-    
+
     const renderSkillsSection = () => {
         return (
             <div className="sec tech-sec">
@@ -40,9 +41,14 @@ const AboutMe = () => {
                 <div className="sec intro-sec">
                     <h1 className="heading intro">Hello</h1>
                     <div>
-                        Results-driven Software Engineer with three years of hands-on experience in software development and a Master's degree in Business Analytics.
-                        Adept at combining technical expertise with a deep understanding of business analytics to deliver innovative software solutions. Proven ability to optimize software systems, enhance user experiences, and drive efficiency in cross-functional teams.
-                        Passionate about tackling complex challenges and leveraging analytical insights to create impactful solutions.
+                        <p style={{lineHeight: "2"}}>
+                            Results-driven Software Engineer with three years of hands-on experience in software development and a Master's degree in Business Analytics.
+                            Adept at combining technical expertise with a deep understanding of business analytics to deliver innovative software solutions. Proven ability to optimize software systems, enhance user experiences, and drive efficiency in cross-functional teams.
+                            Passionate about tackling complex challenges and leveraging analytical insights to create impactful solutions.
+                        </p>
+                        <p style={{lineHeight: "2"}}>
+                            I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <a href="mailto:guptaavinash92@gmail.com" className="link">contact me</a>.
+                        </p>
                     </div>
                 </div>
                 {renderSkillsSection()}
@@ -51,8 +57,9 @@ const AboutMe = () => {
     };
 
     return (
-        <div className="about-container">
-            <div style={{ display: "flex", justifyContent: "end" }}>
+        <>
+            <img className="about-bg" src={bgImg} alt="BG" />
+            <div className="hire-container">
                 <button className="hire">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" style={{ marginRight: "10px" }}>
                         <path d="M2 8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5H7" stroke="#35D6F7" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
@@ -63,8 +70,11 @@ const AboutMe = () => {
                     Hire Me!
                 </button>
             </div>
-            {renderAboutSection()}
-        </div>
+            <div className="about-container">
+                {renderAboutSection()}
+            </div>
+        </>
+
     );
 }
 

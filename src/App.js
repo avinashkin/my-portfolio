@@ -1,18 +1,20 @@
-import Background from './components/Background';
 import HomePage from './components/Homepage';
 import AboutMe from './components/AboutMe';
-import Sidebar from './components/Sidebar';
+import ParticleBackground from './components/ParticleBackground';
+import ContactMe from './components/ContactMe';
 
 function App() {
   return (
     <div className="App">
       <section id="home">
-        <Background />
-        <Sidebar />
+        <ParticleBackground />
         <HomePage />
       </section>
       <section id="about">
         <AboutMe />
+      </section>
+      <section id='contact-me'>
+        <ContactMe />
       </section>
     </div>
   );
