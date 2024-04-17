@@ -1,7 +1,6 @@
-@import './css/background.css';
-@import './css/homepage.css';
-@import './css/sidebar.css';
-@import './css/about.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   margin: 0;
@@ -10,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-color: #1c1b23; */
-  background-color: #14131a;
+  /* background-color: #171717; */
 }
 
 code {
@@ -20,5 +19,4 @@ code {
 
 html {
   scroll-behavior: smooth;
-
 }

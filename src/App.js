@@ -1,20 +1,18 @@
 import HomePage from './components/Homepage';
 import AboutMe from './components/AboutMe';
-import ParticleBackground from './components/ParticleBackground';
+import Background from './components/Background';
 import ContactMe from './components/ContactMe';
+import { useEffect, useState } from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
+  
   return (
-    <div className="App">
-      <section id="home">
-        <ParticleBackground />
+    <div className="App bg-neutral-950">
+      {/* <Navbar /> */}
+      <section id='home'>
+        <Background />
         <HomePage />
-      </section>
-      <section id="about">
-        <AboutMe />
-      </section>
-      <section id='contact-me'>
-        <ContactMe />
       </section>
     </div>
   );

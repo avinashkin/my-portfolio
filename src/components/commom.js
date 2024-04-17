@@ -36,15 +36,18 @@ const IMGS = [
 const SOCIALS = [
     {
         src: github,
-        alt: "github"
+        alt: "github",
+        link: ""
     },
     {
         src: linkedin,
-        alt: "linkedin-icon"
+        alt: "linkedin-icon",
+        link: ""
     },
     {
         src: mailme,
-        alt: "mailme-icon"
+        alt: "mailme-icon",
+        link: ""
     }
 ];
 
