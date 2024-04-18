@@ -15,6 +15,12 @@ export default function Background() {
         delay: 0.2,
         duration: 0.1
       })
+      .to(".social-icon", {
+        y: 0,
+        stagger: 0.05,
+        delay: 0.2,
+        duration: 0.2
+      })
       .fromTo(".hero-img",
         { opacity: 0, x: 45 },
         {
@@ -23,6 +29,18 @@ export default function Background() {
           ease: "power1.out",
           duration: 0.6
         })
+  }, []);
+
+  useEffect(() => {
+    gsap.fromTo(".common-button", {
+      opacity: 0, skewY: 10, y: 100
+    }, {
+      opacity: 1,
+      y: 0,
+      skewY: 0,
+      stagger: 0.04,
+      duration: 1.5
+    })
   }, []);
 
   useEffect(() => {
@@ -73,9 +91,12 @@ export default function Background() {
 
   const renderSocials = () => {
     return (
-      <div className="grid grid-cols-4 w-fit gap-3 place-items-center	mb-5">
+      <div
+        className="grid grid-cols-4 w-fit gap-x-10 place-items-center	mb-5 "
+        style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
+      >
         {SOCIALS.map((icon, idx) => {
-          return <a href={icon.link} target="_blank" key={idx} className={`social-icon ${icon.alt} cursor-pointer`}><img src={icon.src} /></a>
+          return <a href={icon.link} target="_blank" key={idx} className={`social-icon ${icon.alt} cursor-pointer translate-y-[-4rem]`}><img className="w-8" src={icon.src} /></a>
         })}
       </div>
     );
@@ -85,7 +106,7 @@ export default function Background() {
     return (
       <div className="grid grid-cols-2 w-fit gap-3 place-items-center	">
         {["Let's talk", "Resume"].map((text, idx) => {
-          return <button className="common-button rounded-2xl border-2 border-slate-800 px-3.5 py-1 text-slate-400 text-xs" key={idx}>{text}</button>
+          return <button className="common-button rounded-2xl border-2 border-slate-800 hover:border-indigo-500/75 px-3.5 py-1 text-slate-400 text-2xl mt-3" key={idx}>{text}</button>
         })}
       </div>
     );
@@ -93,13 +114,13 @@ export default function Background() {
 
   return (
     <div className="h-screen w-full bg-neutral-950 relative flex flex-col items-center md:justify-center antialiased overflow-hidden	">
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto p-4 z-10 " ref={component}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 max-w-7xl mx-auto p-4 z-10 " ref={component}>
         <div>
           <span className="hello-animation text-xl font-black text-cyan-700 ml-2" aria-label="Hey, I'm">{renderIntroLetters("Hey,", "first")}</span>
           &nbsp;
           <span className="hello-animation text-xl font-black text-cyan-700" aria-label="Hey, I'm">{renderIntroLetters("I'm", "first")}</span>
           <h1
-            className="mb-5 text-[clamp(3rem,20vmin,20rem)] leading-none tracking-tighter text-white font-black"
+            className="mb-5 text-[clamp(3rem,19vmin,20rem)] leading-none tracking-tighter text-white font-black"
             aria-label="Avinash Gupta"
             style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
           >

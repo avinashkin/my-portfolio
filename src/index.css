@@ -20,3 +20,7 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+.diff-font {
+  font-family: 'Sacramento',cursive;
+}

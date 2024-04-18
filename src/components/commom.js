@@ -47,7 +47,7 @@ const SOCIALS = [
     {
         src: mailme,
         alt: "mailme-icon",
-        link: ""
+        link: "mailto:guptaavinash92@gmail.com"
     }
 ];
 

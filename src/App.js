@@ -1,9 +1,10 @@
-import HomePage from './components/Homepage';
 import AboutMe from './components/AboutMe';
 import Background from './components/Background';
 import ContactMe from './components/ContactMe';
-import { useEffect, useState } from 'react';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SkillsScroll from './components/Scroll';
+import Skills from './components/Skills';
 
 function App() {
   
@@ -12,7 +13,19 @@ function App() {
       {/* <Navbar /> */}
       <section id='home'>
         <Background />
-        <HomePage />
+      </section>
+      <section id='about'>
+        <AboutMe />
+      </section>
+      <section id='skills'>
+        <Skills />
+      </section>
+      <SkillsScroll />
+      <section id="contact">
+        <ContactMe />
+      </section>
+      <section id='footer'>
+        <Footer />
       </section>
     </div>
   );
