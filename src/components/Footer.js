@@ -7,7 +7,7 @@ const Footer = () => {
         return (
             <div className="grid grid-cols-4 w-fit gap-12 place-items-center">
                 {SOCIALS.map((icon, idx) => {
-                    return <a href={icon.link} target="_blank" key={idx} className={`${icon.alt} cursor-pointer`}><img className="w-8" src={icon.src} /></a>
+                    return <a href={icon.link} target="_blank" key={idx} className={`${icon.alt} cursor-pointer`}><img className="w-8" src={icon.src} alt="icon" /></a>
                 })}
             </div>
         );
@@ -18,11 +18,11 @@ const Footer = () => {
             <div className="text-white w-full">
                 <div className="grid grid-cols-1 md:grid-cols-3 max-w-7xl mx-auto place-items-center">
                     <div className="text-2xl">
-                        <p>No <i class="fa-regular fa-copyright" style={{color: "#ffffff"}}></i> copyright issues.</p>
+                        <p>No <i className="fa-regular fa-copyright" style={{color: "#ffffff"}}></i> copyright issues.</p>
                     </div>
                     <div>
                         <p className="diff-font text-6xl">Avinash Gupta</p>
-                        <p className="text-2xl mt-3">Made with <i class="fa-solid fa-heart" style={{ color: "#ff000d" }}></i> in India</p>
+                        <p className="text-2xl mt-3">Made with <i className="fa-solid fa-heart" style={{ color: "#ff000d" }}></i> in India</p>
                     </div>
                     {renderSocials()}
                 </div>

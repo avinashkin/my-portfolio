@@ -1,3 +1,4 @@
+import React from 'react';
 import AboutMe from './components/AboutMe';
 import Background from './components/Background';
 import ContactMe from './components/ContactMe';

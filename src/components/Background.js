@@ -96,7 +96,7 @@ export default function Background() {
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
       >
         {SOCIALS.map((icon, idx) => {
-          return <a href={icon.link} target="_blank" key={idx} className={`social-icon ${icon.alt} cursor-pointer translate-y-[-4rem]`}><img className="w-8" src={icon.src} /></a>
+          return <a href={icon.link} target="_blank" key={idx} className={`social-icon ${icon.alt} cursor-pointer translate-y-[-4rem]`}><img className="w-8" src={icon.src} alt="icon" /></a>
         })}
       </div>
     );
@@ -116,9 +116,9 @@ export default function Background() {
     <div className="h-screen w-full bg-neutral-950 relative flex flex-col items-center md:justify-center antialiased overflow-hidden	">
       <div className="grid grid-cols-1 sm:grid-cols-2 max-w-7xl mx-auto p-4 z-10 " ref={component}>
         <div>
-          <span className="hello-animation text-xl font-black text-cyan-700 ml-2" aria-label="Hey, I'm">{renderIntroLetters("Hey,", "first")}</span>
+          <span className="hello-animation text-4xl font-black text-cyan-700 ml-2" aria-label="Hey, I'm">{renderIntroLetters("Hey,", "first")}</span>
           &nbsp;
-          <span className="hello-animation text-xl font-black text-cyan-700" aria-label="Hey, I'm">{renderIntroLetters("I'm", "first")}</span>
+          <span className="hello-animation text-4xl font-black text-cyan-700" aria-label="Hey, I'm">{renderIntroLetters("I'm", "first")}</span>
           <h1
             className="mb-5 text-[clamp(3rem,19vmin,20rem)] leading-none tracking-tighter text-white font-black"
             aria-label="Avinash Gupta"

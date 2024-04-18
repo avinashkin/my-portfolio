@@ -6,10 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const SkillsScroll = () => {
     const component = useRef(null);
-    const techList = [
-        { tech_name: "HTML CSS JavaScript Typescript React Redux", tech_color: "#EFD81D" },
-        { tech_name: "Postman Web Development UI Webpack NodeJs GSAP", tech_color: "#F388E7" },
-    ];
+
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
             const tl = gsap.timeline({
@@ -44,21 +41,21 @@ const SkillsScroll = () => {
         return () => ctx.revert();
     }, []);
     return (
-        <section id="skills" className="mt-20 wrapper overflow-hidden" ref={component}>
+        <section id="skills" className="my-40 wrapper overflow-hidden" ref={component}>
             <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-6xl font-extrabold uppercase tracking-tighter">
                 {Array(6)
                     .fill(
-                        " HTML CSS JavaScript Typescript React Redux "
+                        " HTML CSS SASS JavaScript Typescript React Redux Python"
                     )
                     .reduce((str, el) => str.concat(el), "")}{" "}
             </div>
-            <div className="my-6 text-center font-extrabold text-white text-8xl">
-                Want to <span className="text-indigo-500">Collaborate</span> ?
+            <div className="my-16 text-center font-extrabold text-white text-8xl">
+                Interested in <span className="text-indigo-500">Collaboration</span> ?
             </div>
             <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-6xl font-extrabold uppercase tracking-tighter">
                 {Array(6)
                     .fill(
-                        " Postman Web Development UI Webpack NodeJs GSAP "
+                        " Postman Web Development UI Webpack NodeJs ExpressJS GSAP "
                     )
                     .reduce((str, el) => str.concat(el), "")}{" "}
             </div>
