@@ -6,6 +6,21 @@ import doc from "../images/lucide_files.svg";
 import github from "../images/github.svg";
 import linkedin from "../images/linkedin.svg";
 import mailme from "../images/mailme.svg";
+import cpp from "../images/cpp.svg";
+import css from "../images/css.svg";
+import git from "../images/git.svg";
+import html from "../images/html.svg";
+import javascript from "../images/javascript.svg";
+import mysql from "../images/mysql.svg";
+import node from "../images/nodejs.svg";
+import react from "../images/react.svg";
+import redux from "../images/redux.svg";
+import sass from "../images/sass.svg";
+import tailwind from "../images/tailwindcss.svg";
+import typescript from "../images/typescript.svg";
+import webpack from "../images/webpack.svg";
+import postman from "../images/postman.svg";
+
 
 const IMGS = [
     {
@@ -52,10 +67,10 @@ const SOCIALS = [
 ];
 
 const SKILLS = {
-    FE: ['HTML', 'CSS', 'React', 'JavaScript', 'Typescript', 'Redux', 'Tailwind'],
-    BE: ['Node Js', 'Express Js'],
-    DB: ['MongoDB', 'MySql'],
-    OTHERS: ['Python', 'PowerBi', 'Data Analytics']
+    FE: [html, css, sass, javascript, typescript, cpp, webpack, node],
+    TF: [react, redux, tailwind],
+    DB: [mysql],
+    OTHERS: [git, postman]
 };
 
 const particleConfig = {
