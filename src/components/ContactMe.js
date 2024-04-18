@@ -47,10 +47,9 @@ const ContactMe = () => {
     };
 
     return (
-        <div className="p-16">
-            <h1 className="w-fit text-6xl text-white font-bold md:max-w-lg w-full mt-2 ml-44"
+        <div className="pb-16 px-16">
+            <h1 className="w-fit text-4xl sm:text-6xl text-white font-bold md:max-w-lg w-full mt-2 xl:ml-44"
                 style={{
-                    fontSize: "72px",
                     background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"

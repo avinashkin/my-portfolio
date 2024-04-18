@@ -1,12 +1,14 @@
 import React from "react";
 import profile from "../images/profile_image.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutMe = () => {
     const renderAboutSection = () => {
         return (
-            <div className="grid grid-rows-2">
+            <div className="flex flex-col">
                 <h1 className="font-bold w-fit h-fit leading-tight tracking-tight  text-slate-300 text-5xl md:text-8xl">About Me</h1>
-                <p className="text-white text-2xl">
+                <p className="text-white text-2xl mt-16">
                     Welcome to my corner of the web! I'm, a full stack developer passionate about creating user-friendly solutions.
                     I enjoy building websites and applications that make life easier and more enjoyable for people. Curiosity drives me to learn new technologies.
                 </p>
@@ -22,13 +24,13 @@ const AboutMe = () => {
 
     const renderImage = () => {
         return (
-            <img className="w-[34rem] rounded-lg ml-16"  src={profile} alt="img" />
+            <img className="w-[34rem] rounded-lg mt-28 lg:mt-0 lg:ml-8 mx-auto"  src={profile} alt="img" />
         );
     };
 
     return (
-        <div className="w-full py-40">
-            <div className="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-[77rem]">
+        <div className="w-full py-40 px-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto max-w-[77rem]">
                 {renderAboutSection()}
                 {renderImage()}
             </div>
