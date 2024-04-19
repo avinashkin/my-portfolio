@@ -1,7 +1,5 @@
 import React from "react";
 import profile from "../images/profile_image.png";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const AboutMe = () => {
     const renderAboutSection = () => {
