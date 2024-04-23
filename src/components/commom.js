@@ -26,6 +26,7 @@ import unigrad from "../images/unigrad.png";
 import exp from "../images/expressreviews.png";
 import mui from "../images/material-ui.svg";
 import mongo from "../images/mongodb.svg";
+import gsapicon from "../images/gsap.svg";
 
 
 const IMGS = [
@@ -74,7 +75,7 @@ const SOCIALS = [
 
 const SKILLS = {
     FE: [html, css, sass, javascript, typescript, cpp, webpack, node],
-    TF: [react, redux, tailwind],
+    TF: [react, redux, tailwind, gsapicon],
     DB: [mysql],
     OTHERS: [git, postman]
 };
@@ -92,7 +93,7 @@ const PROJECTS = [
         url: "https://avinashgupta.netlify.app/",
         desc: "Portfolio",
         desc2: "Innovative design and functionality.",
-        tech: [react, javascript, tailwind ]
+        tech: [react, javascript, tailwind, gsapicon ]
     },
     {
         img: unigrad,
