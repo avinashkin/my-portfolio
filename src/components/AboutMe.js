@@ -27,7 +27,7 @@ const AboutMe = () => {
 
     const renderImage = () => {
         return (
-            <img className="w-[30rem] rounded-lg mt-28 lg:mt-0 lg:ml-32 mx-auto"  src={profile} alt="img" />
+            <img className="w-[30rem] rounded-lg mt-28 lg:mt-0 lg:ml-8 xl:ml-32 mx-auto"  src={profile} alt="img" />
         );
     };
 

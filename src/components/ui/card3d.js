@@ -4,7 +4,7 @@ import React, {
   useState,
   useContext,
   useRef,
-  useEffect,
+  useEffect
 } from "react";
 
 const MouseEnterContext = createContext(undefined);
@@ -69,14 +69,25 @@ export const CardContainer = ({
 
 export const CardBody = ({
   children,
-  className,
+  className
 }) => {
+  const card = useRef(null);
+  const [minHeight, setHeight] = useState("30rem");
+  useEffect(() => {
+    const height = card?.current?.clientHeight;
+    if (height > minHeight) {
+      setHeight(`${height/16}rem`);
+    }
+  }, [card, minHeight]);
+
   return (
     <div
       className={cn(
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
-        className
+        className,
+        `min-h-[${minHeight}]`
       )}
+      ref={card}
     >
       {children}
     </div>

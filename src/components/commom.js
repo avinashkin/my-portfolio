@@ -23,7 +23,9 @@ import postman from "../images/postman.svg";
 import vf from "../images/vodafone.jpeg";
 import folio from "../images/portfolio.png";
 import unigrad from "../images/unigrad.png";
-import exp from "../images/expressreviews.png"
+import exp from "../images/expressreviews.png";
+import mui from "../images/material-ui.svg";
+import mongo from "../images/mongodb.svg";
 
 
 const IMGS = [
@@ -83,28 +85,28 @@ const PROJECTS = [
         url: "",
         desc: "Digital - Vodafone Romania",
         desc2: "Amdocs",
-        tech: []
+        tech: [react, redux, typescript, webpack, sass, postman]
     },
     {
         img: folio,
         url: "https://github.com/avinashkin/my-portfolio",
         desc: "Portfolio",
         desc2: "Innovative design and functionality.",
-        tech: []
+        tech: [react, javascript, tailwind ]
     },
     {
         img: unigrad,
         url: "https://unigrad.herokuapp.com/login",
         desc: "UniGrad",
         desc2: "A complete College Management App",
-        tech: []
+        tech: [react, redux, javascript, node, mui, mongo, postman]
     },
     {
         img: exp,
         url: "https://github.com/avinashkin/expressBookReviews",
         desc: "Express Book Reviews",
         desc2: "Books review backend",
-        tech: []
+        tech: [node, javascript]
     }
 ];
 
