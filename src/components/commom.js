@@ -58,12 +58,12 @@ const SOCIALS = [
     {
         src: github,
         alt: "github",
-        link: ""
+        link: "https://github.com/avinashkin"
     },
     {
         src: linkedin,
         alt: "linkedin-icon",
-        link: ""
+        link: "https://www.linkedin.com/in/avinashguptakin/"
     },
     {
         src: mailme,
@@ -89,7 +89,7 @@ const PROJECTS = [
     },
     {
         img: folio,
-        url: "https://github.com/avinashkin/my-portfolio",
+        url: "https://avinashgupta.netlify.app/",
         desc: "Portfolio",
         desc2: "Innovative design and functionality.",
         tech: [react, javascript, tailwind ]
