@@ -6,6 +6,7 @@ import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import SkillsScroll from './components/Scroll';
 import Skills from './components/Skills';
+import Project from './components/Projects';
 
 function App() {
   
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section id='skills'>
         <Skills />
+      </section>
+      <section id='project'>
+        <Project />
       </section>
       <SkillsScroll />
       <section id="contact">

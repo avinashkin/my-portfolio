@@ -3,9 +3,22 @@ import { BackgroundBeams } from "../components/ui/background-beams";
 import gsap from "gsap";
 import heroImg from "../images/hero-img.svg";
 import { SOCIALS } from "./commom";
+import Typed from 'typed.js';
 
 export default function Background() {
   const component = useRef(null);
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const repeat = new Typed(typed.current, {
+      strings: ['Frontend Developer.', 'Backend Developer.', 'Freelancer.'],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+
+    return () => repeat.destroy();
+  })
 
   useEffect(() => {
     gsap.timeline()
@@ -96,7 +109,7 @@ export default function Background() {
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
       >
         {SOCIALS.map((icon, idx) => {
-          return <a href={icon.link} target="_blank" key={idx} className={`social-icon ${icon.alt} cursor-pointer translate-y-[-4rem]`}><img className="w-8" src={icon.src} alt="icon" /></a>
+          return <a href={icon.link} target="_blank" key={idx} rel="noreferrer" className={`social-icon ${icon.alt} cursor-pointer translate-y-[-4rem]`}><img className="w-8" src={icon.src} alt="icon" /></a>
         })}
       </div>
     );
@@ -110,17 +123,25 @@ export default function Background() {
         })}
       </div>
     );
+  };
+
+  const renderTyped = () => {
+    return (
+      <div className="text-white text-xl font-bold mb-8">
+        <span>I'm a <span ref={typed}></span></span>
+      </div>
+    )
   }
 
   return (
     <div className="h-screen w-full bg-neutral-950 relative flex flex-col items-center md:justify-center antialiased overflow-hidden	">
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-7xl mx-auto p-4 z-10 " ref={component}>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:w-49rem lg:w-[75rem] mx-auto p-4 lg:p-0 z-10 " ref={component}>
         <div className="mt-24 md:mt-0">
-          <span className="hello-animation text-4xl font-black text-cyan-700 ml-2" aria-label="Hey, I'm">{renderIntroLetters("Hey,", "first")}</span>
+          <span className="hello-animation text-4xl font-black text-indigo-700 ml-2" aria-label="Hey, I'm">{renderIntroLetters("Hey,", "first")}</span>
           &nbsp;
-          <span className="hello-animation text-4xl font-black text-cyan-700" aria-label="Hey, I'm">{renderIntroLetters("I'm", "first")}</span>
+          <span className="hello-animation text-4xl font-black text-indigo-700" aria-label="Hey, I'm">{renderIntroLetters("I'm", "first")}</span>
           <h1
-            className="mb-5 text-[6rem] md:text-[7rem] lg:text-[9rem] leading-none tracking-tighter text-white font-black"
+            className="mb-5 text-[6rem] lg:text-[9rem] leading-none tracking-tighter text-white font-black"
             aria-label="Avinash Gupta"
             style={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
           >
@@ -131,6 +152,7 @@ export default function Background() {
               {renderLetters("Gupta", "last")}
             </span>
           </h1>
+          {renderTyped()}
           {renderSocials()}
           {renderButtons()}
         </div>

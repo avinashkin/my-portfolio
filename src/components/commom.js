@@ -20,6 +20,10 @@ import tailwind from "../images/tailwindcss.svg";
 import typescript from "../images/typescript.svg";
 import webpack from "../images/webpack.svg";
 import postman from "../images/postman.svg";
+import vf from "../images/vodafone.jpeg";
+import folio from "../images/portfolio.png";
+import unigrad from "../images/unigrad.png";
+import exp from "../images/expressreviews.png"
 
 
 const IMGS = [
@@ -73,9 +77,41 @@ const SKILLS = {
     OTHERS: [git, postman]
 };
 
+const PROJECTS = [
+    {
+        img: vf,
+        url: "",
+        desc: "Digital - Vodafone Romania",
+        desc2: "Amdocs",
+        tech: []
+    },
+    {
+        img: folio,
+        url: "https://github.com/avinashkin/my-portfolio",
+        desc: "Portfolio",
+        desc2: "Innovative design and functionality.",
+        tech: []
+    },
+    {
+        img: unigrad,
+        url: "https://unigrad.herokuapp.com/login",
+        desc: "UniGrad",
+        desc2: "A complete College Management App",
+        tech: []
+    },
+    {
+        img: exp,
+        url: "https://github.com/avinashkin/expressBookReviews",
+        desc: "Express Book Reviews",
+        desc2: "Books review backend",
+        tech: []
+    }
+];
+
 
 export {
     IMGS,
     SOCIALS,
-    SKILLS
+    SKILLS,
+    PROJECTS
 };

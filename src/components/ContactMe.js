@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import contact from "../images/contactme.svg";
 
 
 const ContactMe = () => {
@@ -47,14 +48,15 @@ const ContactMe = () => {
     };
 
     return (
-        <div className="pb-16 px-16">
-            <h1 className="w-fit text-4xl sm:text-6xl text-white font-bold md:max-w-lg w-full mt-2 xl:ml-44"
+        <div className="pb-16 px-16 xl:ml-44">
+            <h2 className="text-white text-2xl">Let's Talk</h2>
+            <h1 className="w-fit text-4xl sm:text-6xl text-white font-bold md:max-w-lg w-full mt-2 "
                 style={{
                     background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"
                 }}>Contact Me</h1>
-            <form className="flex flex-col mx-auto sm:w-[30rem] md:w-[35rem] mt-16" onSubmit={onClickSend}>
+            <form className="flex flex-col sm:w-[30rem] md:w-[35rem] mt-16" onSubmit={onClickSend}>
                 <input
                     type="text"
                     placeholder="Your Name"
@@ -71,7 +73,7 @@ const ContactMe = () => {
                 />
                 <textarea
                     rows={7}
-                    placeholder="A message for me..."
+                    placeholder="A message for me...."
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
                     className="rounded-2xl border-2 border-indigo-500/75 bg-transparent p-3 text-white mt-8"

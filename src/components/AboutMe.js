@@ -5,7 +5,12 @@ const AboutMe = () => {
     const renderAboutSection = () => {
         return (
             <div className="flex flex-col">
-                <h1 className="font-bold w-fit h-fit leading-tight tracking-tight  text-slate-300 text-5xl md:text-8xl">About Me</h1>
+                <h1
+                    className="font-bold w-fit h-fit leading-tight tracking-tight  text-slate-300 text-5xl md:text-8xl"
+                    style={{background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent"}}
+                >About Me</h1>
                 <p className="text-white text-2xl mt-16">
                     Welcome to my corner of the web! I'm, a full stack developer passionate about creating user-friendly solutions.
                     I enjoy building websites and applications that make life easier and more enjoyable for people. Curiosity drives me to learn new technologies.
@@ -14,7 +19,7 @@ const AboutMe = () => {
                 <p className="text-white text-2xl">
                     I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to
                     &nbsp;
-                    <a href="mailto:guptaavinash92@gmail.com" className="underline underline-offset-2 decoration-indigo-500">contact me</a>.
+                    <a href="mailto:guptaavinash92@gmail.com" className="underline font-bold underline-offset-4 text-indigo-500">contact me</a>.
                 </p>
             </div>
         );
@@ -22,7 +27,7 @@ const AboutMe = () => {
 
     const renderImage = () => {
         return (
-            <img className="w-[34rem] rounded-lg mt-28 lg:mt-0 lg:ml-8 mx-auto"  src={profile} alt="img" />
+            <img className="w-[30rem] rounded-lg mt-28 lg:mt-0 lg:ml-32 mx-auto"  src={profile} alt="img" />
         );
     };
 
