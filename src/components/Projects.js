@@ -6,7 +6,7 @@ const Project = () => {
     return (
         <div className="p-16">
             <h1
-                className="w-fit text-6xl text-white font-bold mt-2 xl:ml-44"
+                className="w-fit text-4xl sm:text-6xl text-white font-bold mt-2 xl:ml-44"
                 style={{
                     background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
                     WebkitBackgroundClip: "text",

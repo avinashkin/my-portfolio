@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
-import contact from "../images/contactme.svg";
 
 
 const ContactMe = () => {

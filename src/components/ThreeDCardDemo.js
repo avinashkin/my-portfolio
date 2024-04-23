@@ -8,7 +8,7 @@ export function ThreeDCardDemo() {
             {PROJECTS.map((project, idx) => {
                 return (
                     <CardContainer key={idx} className="group">
-                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border">
+                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border min-h-[30rem]">
                             <CardItem
                                 translateZ="50"
                                 className="text-2xl font-bold text-neutral-600 dark:text-white"
@@ -53,7 +53,7 @@ export function ThreeDCardDemo() {
                                     target="__blank"
                                     className="mt-8 rounded-xl font-bold text-sm dark:text-white"
                                 >
-                                    Go <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                                    Go <i className="fa-solid fa-arrow-up-right-from-square ml-1"></i>
                                 </CardItem>}
                             </div>
                         </CardBody>

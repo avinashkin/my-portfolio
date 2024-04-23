@@ -6,7 +6,7 @@ const AboutMe = () => {
         return (
             <div className="flex flex-col">
                 <h1
-                    className="font-bold w-fit h-fit leading-tight tracking-tight  text-slate-300 text-5xl md:text-8xl"
+                    className="font-bold w-fit h-fit leading-tight tracking-tight  text-slate-300 text-4xl sm:text-6xl"
                     style={{background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"}}

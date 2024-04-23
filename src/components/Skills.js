@@ -37,7 +37,7 @@ const Skills = () => {
     return (
         <div className="w-full" ref={cont}>
             <div className="p-16 mx-auto skill-wrapper">
-                <h1 className="w-fit text-6xl text-white font-bold md:max-w-lg w-full mt-2 xl:ml-44 skill" style={{
+                <h1 className="w-fit text-4xl sm:text-6xl text-white font-bold md:max-w-lg w-full mt-2 xl:ml-44 skill" style={{
                     background: "-webkit-linear-gradient(#9f55ff,#7000ff)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent"

@@ -71,23 +71,13 @@ export const CardBody = ({
   children,
   className
 }) => {
-  const card = useRef(null);
-  const [minHeight, setHeight] = useState("30rem");
-  useEffect(() => {
-    const height = card?.current?.clientHeight;
-    if (height > minHeight) {
-      setHeight(`${height/16}rem`);
-    }
-  }, [card, minHeight]);
 
   return (
     <div
       className={cn(
         "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
-        className,
-        `min-h-[${minHeight}]`
+        className
       )}
-      ref={card}
     >
       {children}
     </div>

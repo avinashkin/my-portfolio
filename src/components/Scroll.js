@@ -43,17 +43,17 @@ const SkillsScroll = () => {
     return (
         <section id="skills" className="h-screen py-40 wrapper overflow-hidden relative" ref={component}>
             <div className="m-0 absolute left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%]">
-                <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tighter">
+                <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-3xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tighter">
                     {Array(6)
                         .fill(
                             " HTML CSS SASS JavaScript Typescript React Redux Python"
                         )
                         .reduce((str, el) => str.concat(el), "")}{" "}
                 </div>
-                <div className="my-16 text-center font-extrabold text-white text-4xl lg:text-6xl xl:text-8xl">
+                <div className="my-16 text-center font-extrabold text-white text-2xl md:text-4xl lg:text-6xl xl:text-8xl">
                     Interested in <span className="text-indigo-500">Collaboration</span> ?
                 </div>
-                <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-4xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tighter">
+                <div className="tech-row mb-8 flex items-center justify-center gap-4 text-slate-700 whitespace-nowrap tech-item text-3xl md:text-5xl lg:text-6xl font-extrabold uppercase tracking-tighter">
                     {Array(6)
                         .fill(
                             " Postman Web Development UI Webpack NodeJs ExpressJS GSAP "
