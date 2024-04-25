@@ -75,7 +75,7 @@ const ContactMe = () => {
                     placeholder="A message for me...."
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}
-                    className="rounded-2xl border-2 border-indigo-500/75 bg-transparent p-3 text-white mt-8"
+                    className="rounded-2xl border-2 border-indigo-500/75 bg-transparent text-xl sm:text-2xl p-3 text-white mt-8"
                 />
                 <button className="mt-6 text-white font-extrabold text-lg rounded-2xl border-2 border-indigo-500/75 w-32 h-10" type="submit">
                     {isLoading ? <i className="fa-solid fa-spinner fa-spin" style={{color: "#ffffff"}}></i> : "Send"}

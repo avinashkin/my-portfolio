@@ -3,7 +3,6 @@
 
 [Live Demo](https://avinashgupta.netlify.app/)
 
-My goal of having my own portfolio website since 2019 🚀
 
 ## How did I create this?
 
