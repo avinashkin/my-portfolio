@@ -12,7 +12,7 @@ export default function Background() {
 
   useEffect(() => {
     const repeat = new Typed(typed.current, {
-      strings: ['Frontend Developer.', 'Backend Developer.', 'Freelancer.'],
+      strings: ['Frontend Developer.', 'Backend Developer.', 'Business Analyst.', 'Freelancer.'],
       typeSpeed: 80,
       backSpeed: 50,
       loop: true

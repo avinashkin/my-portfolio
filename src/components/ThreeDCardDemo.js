@@ -8,21 +8,21 @@ export function ThreeDCardDemo() {
             {PROJECTS.map((project, idx) => {
                 return (
                     <CardContainer key={idx} className="group">
-                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border min-h-[30rem]">
+                        <CardBody className="bg-black relative group/card  hover:shadow-2xl hover:shadow-emerald-500/[0.1] border-white/[0.2] w-auto sm:w-[24rem] h-auto rounded-xl p-6 border min-h-[30rem]">
                             <CardItem
                                 translateZ="50"
-                                className="text-2xl font-bold text-neutral-600 dark:text-white"
+                                className="text-2xl font-bold text-white"
                             >
                                 {project.desc}
                             </CardItem>
                             <CardItem
                                 as="p"
                                 translateZ="60"
-                                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                                className="text-sm max-w-sm mt-2 text-neutral-300"
                             >
                                 {project.desc2}
                             </CardItem>
-                            <CardItem translateZ="100" className="w-full mt-4">
+                            <CardItem translateZ="90" className="w-full mt-4 shadow-emerald-500/[0.1]">
                                 <img
                                     src={project.img}
                                     height="1000"
@@ -51,7 +51,7 @@ export function ThreeDCardDemo() {
                                     as="a"
                                     href={project.url}
                                     target="__blank"
-                                    className="mt-8 rounded-xl font-bold text-sm dark:text-white"
+                                    className="mt-8 rounded-xl font-bold text-sm text-white"
                                 >
                                     Go <i className="fa-solid fa-arrow-up-right-from-square ml-1"></i>
                                 </CardItem>}
