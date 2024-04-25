@@ -107,7 +107,7 @@ const PROJECTS = [
         url: "https://github.com/avinashkin/expressBookReviews",
         desc: "Express Book Reviews",
         desc2: "Books review backend",
-        tech: [node, javascript]
+        tech: [node, javascript, postman]
     }
 ];
 
