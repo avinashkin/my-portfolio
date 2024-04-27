@@ -97,7 +97,7 @@ const PROJECTS = [
     },
     {
         img: unigrad,
-        url: "https://unigrad.herokuapp.com/login",
+        url: "https://st-andrews-frontend.vercel.app/login",
         desc: "UniGrad",
         desc2: "A complete College Management App",
         tech: [react, redux, javascript, node, mui, mongo, postman]
