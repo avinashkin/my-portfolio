@@ -4,7 +4,7 @@ import gsap from "gsap";
 import heroImg from "../images/hero-img.svg";
 import { SOCIALS } from "./commom";
 import Typed from 'typed.js';
-import Resume from "../files/Avinash Gupta CV.docx";
+import Resume from "../files/Avinash Gupta CV.pdf";
 
 export default function Background() {
   const component = useRef(null);
