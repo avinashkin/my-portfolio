@@ -27,6 +27,7 @@ import exp from "../images/expressreviews.png";
 import mui from "../images/material-ui.svg";
 import mongo from "../images/mongodb.svg";
 import gsapicon from "../images/gsap.svg";
+import todo from "../images/todo.png";
 
 
 const IMGS = [
@@ -108,6 +109,13 @@ const PROJECTS = [
         desc: "Express Book Reviews",
         desc2: "Books review backend",
         tech: [node, javascript, postman]
+    },
+    {
+        img: todo,
+        url: "https://github.com/avinashkin/expressBookReviews",
+        desc: "Todo List",
+        desc2: "A simple todo list application",
+        tech: [react, javascript, tailwind]
     }
 ];
 
