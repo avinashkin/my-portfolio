@@ -28,6 +28,7 @@ import mui from "../images/material-ui.svg";
 import mongo from "../images/mongodb.svg";
 import gsapicon from "../images/gsap.svg";
 import todo from "../images/todo.png";
+import py from "../images/python.png";
 
 
 const IMGS = [
@@ -75,7 +76,7 @@ const SOCIALS = [
 ];
 
 const SKILLS = {
-    FE: [html, css, sass, javascript, typescript, cpp, webpack, node],
+    FE: [javascript, typescript, html, css, sass, cpp, webpack, node, py],
     TF: [react, redux, tailwind, gsapicon],
     DB: [mysql],
     OTHERS: [git, postman]
