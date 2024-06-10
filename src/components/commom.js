@@ -104,19 +104,19 @@ const PROJECTS = [
         desc2: "A complete College Management App",
         tech: [react, redux, javascript, node, mui, mongo, postman]
     },
-    {
-        img: exp,
-        url: "https://github.com/avinashkin/expressBookReviews",
-        desc: "Express Book Reviews",
-        desc2: "Books review backend",
-        tech: [node, javascript, postman]
-    },
+    // {
+    //     img: exp,
+    //     url: "https://github.com/avinashkin/expressBookReviews",
+    //     desc: "Express Book Reviews",
+    //     desc2: "Books review backend",
+    //     tech: [node, javascript, postman]
+    // },
     {
         img: todo,
-        url: "https://github.com/avinashkin/expressBookReviews",
+        url: "https://react-todo-webap.netlify.app/",
         desc: "Todo List",
         desc2: "A simple todo list application",
-        tech: [react, javascript, tailwind]
+        tech: [react, javascript, tailwind, node, mongo]
     }
 ];
 
