@@ -4,7 +4,7 @@
 [Live Demo](https://avinashgupta.netlify.app/)
 
 
-## How did I create this?
+## How did I build this?
 
 1. UI/UX is brainstormed using inspiration from various portfolios from internet.
 2. This project uses React for simplicity to break down sections as components.
