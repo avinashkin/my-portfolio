@@ -23,13 +23,12 @@ import postman from "../images/postman.svg";
 import vf from "../images/vodafone.jpeg";
 import folio from "../images/portfolio.png";
 import unigrad from "../images/unigrad.png";
-import exp from "../images/expressreviews.png";
 import mui from "../images/material-ui.svg";
 import mongo from "../images/mongodb.svg";
 import gsapicon from "../images/gsap.svg";
 import todo from "../images/todo.png";
 import py from "../images/python.png";
-
+import Zwiggy from "../images/Zwiggy.png";
 
 const IMGS = [
     {
@@ -98,24 +97,24 @@ const PROJECTS = [
         tech: [react, javascript, tailwind, gsapicon ]
     },
     {
+        img: Zwiggy,
+        url: "https://zwiggy-web.netlify.app/",
+        desc: "Zwiggy",
+        desc2: "A food ordering application.",
+        tech: [react, javascript, tailwind ]
+    },
+    {
         img: unigrad,
         url: "https://st-andrews-frontend.vercel.app/login",
         desc: "UniGrad",
         desc2: "A complete College Management App",
         tech: [react, redux, javascript, node, mui, mongo, postman]
     },
-    // {
-    //     img: exp,
-    //     url: "https://github.com/avinashkin/expressBookReviews",
-    //     desc: "Express Book Reviews",
-    //     desc2: "Books review backend",
-    //     tech: [node, javascript, postman]
-    // },
     {
         img: todo,
         url: "https://react-todo-webap.netlify.app/",
         desc: "Todo List",
-        desc2: "A simple todo list application",
+        desc2: "A simple todo list application (Fullstack)",
         tech: [react, javascript, tailwind, node, mongo]
     }
 ];
