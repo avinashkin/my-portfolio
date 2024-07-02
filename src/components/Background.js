@@ -120,13 +120,13 @@ export default function Background() {
     return (
       <div className="grid grid-cols-2 w-fit gap-3 place-items-center	">
         <a href="#contact" className="common-button rounded-2xl border-2 border-slate-800 hover:border-indigo-500/75 px-3.5 py-1 text-slate-400 text-2xl mt-3">Let's Talk</a>
-        <a 
+        {/* <a 
           href={Resume}
           className="common-button rounded-2xl border-2 border-slate-800 hover:border-indigo-500/75 px-3.5 py-1 text-slate-400 text-2xl mt-3"
           download="Avinash Gupta CV"
         >
             Resume
-        </a>
+        </a> */}
       </div>
     );
   };
