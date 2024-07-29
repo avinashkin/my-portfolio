@@ -21,8 +21,8 @@ const Footer = () => {
                         <p>No <i className="fa-regular fa-copyright" style={{color: "#ffffff"}}></i> copyright issues.</p>
                     </div>
                     <div>
-                        <p className="diff-font text-4xl lg:text-6xl">Avinash Gupta</p>
-                        <p className="text-lg lg:text-2xl mt-3">Made with <i className="fa-solid fa-heart" style={{ color: "#ff000d" }}></i> in India</p>
+                        <p className="diff-font text-4xl lg:text-6xl select-none">Avinash Gupta</p>
+                        {/* <p className="text-lg lg:text-2xl mt-3">Made with <i className="fa-solid fa-heart" style={{ color: "#ff000d" }}></i> in India</p> */}
                     </div>
                     {renderSocials()}
                 </div>

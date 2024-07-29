@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../images/profile_image.jpg";
+import profile from "../images/profile-pic.png";
 
 const AboutMe = () => {
     const renderAboutSection = () => {
@@ -27,7 +27,7 @@ const AboutMe = () => {
 
     const renderImage = () => {
         return (
-            <div className="mt-28 lg:mt-0 lg:ml-8 xl:ml-32 overflow-hidden rounded-lg">
+            <div className="mt-28 lg:mt-0 lg:ml-8 xl:ml-32 rounded-lg">
                 <img className="w-[30rem] mx-auto hover:ease-in-out hover:scale-110 duration-500"  src={profile} alt="img" />
             </div>
         );

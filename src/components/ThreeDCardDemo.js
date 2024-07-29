@@ -25,8 +25,9 @@ export function ThreeDCardDemo() {
                             <CardItem translateZ="90" className="w-full mt-4 shadow-emerald-500/[0.1]">
                                 <img
                                     src={project.img}
-                                    className="h-52 w-full object-fill rounded-xl group-hover/card:shadow-xl"
+                                    className="h-52 w-full object-fill rounded-xl group-hover/card:shadow-xl cursor-pointer"
                                     alt="thumbnail"
+                                    onClick={() => project.url && window.open(project.url, "_blank")}
                                 />
                             </CardItem>
                             <CardItem translateZ="100" className="w-full mt-4 flex flex-row flex-wrap gap-4">
